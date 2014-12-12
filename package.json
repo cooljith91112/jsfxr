@@ -1,0 +1,23 @@
+{
+  "name": "jsfxr",
+  "version": "0.0.1",
+  "description": "as3fxr synth port to JavaScript",
+  "main": "jsfxr.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gre/jsfxr.git"
+  },
+  "keywords": [
+    "jsfxr",
+    "synth",
+    "8bit"
+  ],
+  "author": "Gaëtan Renaudeau (maintainer), Markus Neubrand (main author)",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/gre/jsfxr/issues"
+  },
+  "homepage": "https://github.com/gre/jsfxr"
+}

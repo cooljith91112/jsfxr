@@ -447,7 +447,7 @@ function SfxrSynth() {
 // Adapted from http://codebase.es/riffwave/
 var synth = new SfxrSynth();
 // Export for the Closure Compiler
-window['jsfxr'] = function(settings) {
+var jsfxr = function(settings) {
   // Initialize SfxrParams
   synth._params.setSettings(settings);
   // Synthesize Wave
@@ -479,4 +479,11 @@ window['jsfxr'] = function(settings) {
     output += base64Characters[a >> 18] + base64Characters[a >> 12 & 63] + base64Characters[a >> 6 & 63] + base64Characters[a & 63];
   }
   return output;
+}
+
+if (typeof require === 'function') {
+  module.exports = jsfxr;
+}
+else {
+  this.jsfxr = jsfxr;
 }
