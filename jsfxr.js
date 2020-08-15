@@ -553,10 +553,3 @@ export const jsfxr = settings => {
   }
   return output;
 };
-
-if (typeof require === 'function') {
-  module.exports = jsfxr;
-}
-else {
-  this.jsfxr = jsfxr;
-}
