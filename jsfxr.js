@@ -520,7 +520,7 @@ function SfxrSynth() {
 // Adapted from http://codebase.es/riffwave/
 const synth = new SfxrSynth();
 // Export for the Closure Compiler
-const jsfxr = settings => {
+export const jsfxr = settings => {
   // Initialize SfxrParams
   synth._params.setSettings(settings);
   // Synthesize Wave
